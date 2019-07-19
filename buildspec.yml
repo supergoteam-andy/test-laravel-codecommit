@@ -8,7 +8,6 @@ phases:
     commands:
       - php --version
       - composer install
-      - php artisan serve
 
 artifacts:
   files:
