@@ -17,7 +17,7 @@ hooks:
 #    - location: deployment/scripts/download_bundle.sh
 #      timeout: 1200
 #      runas: forge
-  AfterInstall:
+AfterInstall:
     - location: deployment/scripts/after_install.sh
       timeout: 300
 #  ApplicationStart:
