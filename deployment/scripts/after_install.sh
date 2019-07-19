@@ -1,3 +1,3 @@
 #!/bin/sh
 cd /var/www/html
-php artisan migrate --force
+/usr/bin/php artisan migrate --force
