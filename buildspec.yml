@@ -7,7 +7,6 @@ phases:
   build:
     commands:
       - php --version
-      - php artisan serve
 
 artifacts:
   files:
