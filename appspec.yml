@@ -2,17 +2,17 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/forge/app
+    destination: /var/www/html
 permissions:
-  - object: /home/forge/app
-    owner: forge
+  - object: /var/www/html
+    owner: www-data
     group: www-data
     mode: 775
     type:
       - file
 
-  - object: /home/forge/app
-    owner: forge
+  - object: /var/www/html
+    owner: www-data
     group: www-data
     mode: 755
     type:
@@ -34,7 +34,6 @@ hooks:
   AfterInstall:
     - location: deployment/scripts/after_install.sh
       timeout: 300
-      runas: forge
 #  ApplicationStart:
 #    - location: deployment/scripts/application_start.sh
 #      timeout: 300
